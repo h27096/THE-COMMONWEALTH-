@@ -1,1 +1,90 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Info | The Commonwealth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <div class="brand-icon">⚔</div>
+        <span>THE COMMONWEALTH</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="server-info.html" class="active">Server Info</a>
+        <a href="rules.html">Rules</a>
+        <a href="news.html">News</a>
+    </nav>
+</header>
+
+<main>
+    <section class="launcher-section">
+        <span class="eyebrow">CONNECTION CENTER</span>
+        <h1>SERVER INFORMATION</h1>
+        <p>Everything you need to join The Commonwealth.</p>
+
+        <div class="launcher-card">
+            <h2>Java Edition</h2>
+            <p>Connect using Minecraft Java Edition.</p>
+
+            <div class="connection-detail">
+                <span>SERVER ADDRESS</span>
+                <code id="java-address">TheCommonwealth-Sm67.aternos.me</code>
+                <button class="primary-button"
+                    onclick="copyText('TheCommonwealth-Sm67.aternos.me')">
+                    COPY ADDRESS
+                </button>
+            </div>
+        </div>
+
+        <div class="launcher-card">
+            <h2>Bedrock Edition</h2>
+            <p>Connect using Minecraft Bedrock Edition.</p>
+
+            <div class="connection-detail">
+                <span>SERVER ADDRESS</span>
+                <code>TheCommonwealth-Sm67.aternos.me</code>
+                <button class="primary-button"
+                    onclick="copyText('TheCommonwealth-Sm67.aternos.me')">
+                    COPY ADDRESS
+                </button>
+            </div>
+
+            <div class="connection-detail">
+                <span>SERVER PORT</span>
+                <code>19132</code>
+                <button class="primary-button"
+                    onclick="copyText('19132')">
+                    COPY PORT
+                </button>
+            </div>
+        </div>
+
+        <div class="launcher-card">
+            <h2>Server Specifications</h2>
+            <p><strong>Software:</strong> Paper</p>
+            <p><strong>Version:</strong> Minecraft 26.3</p>
+            <p><strong>Crossplay:</strong> Geyser + Floodgate</p>
+            <p><strong>Hosting:</strong> Aternos</p>
+        </div>
+
+        <p id="copy-message" class="launch-message"
+            aria-live="polite"></p>
+    </section>
+</main>
+
+<footer>
+    <p>THE COMMONWEALTH © 2026</p>
+    <p>Built for the community.</p>
+</footer>
+
+</body>
+</html>
+
