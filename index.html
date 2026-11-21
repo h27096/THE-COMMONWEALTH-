@@ -1,1 +1,111 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111612">
+    <title>The Commonwealth | Minecraft Server</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <div class="brand-icon">⚔</div>
+            <span>THE COMMONWEALTH</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="server-info.html">Server Info</a>
+            <a href="rules.html">Rules</a>
+            <a href="news.html">News</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">MINECRAFT SURVIVAL</span>
+
+                <h1>WELCOME TO<br>
+                    <span>THE COMMONWEALTH</span>
+                </h1>
+
+                <p>
+                    A world waiting to be explored.
+                    A community waiting to be built.
+                    Your adventure starts here.
+                </p>
+
+                <a href="#launcher" class="primary-button">
+                    EXPLORE THE SERVER
+                </a>
+            </div>
+        </section>
+
+        <section class="launcher-section" id="launcher">
+            <div class="section-heading">
+                <span class="eyebrow">SERVER ACCESS</span>
+                <h2>ENTER THE COMMONWEALTH</h2>
+                <p>Our world is waiting. Request a server startup below.</p>
+            </div>
+
+            <div class="launcher-card">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span id="server-status">STATUS UNKNOWN</span>
+                </div>
+
+                <h2>Ready to play?</h2>
+                <p>Enter your Minecraft username to request a server startup.</p>
+
+                <form id="launch-form">
+                    <input
+                        type="text"
+                        id="minecraft-username"
+                        placeholder="Minecraft username"
+                        maxlength="16"
+                        required
+                    >
+
+                    <button type="submit" class="primary-button">
+                        REQUEST SERVER START
+                    </button>
+                </form>
+
+                <p id="launch-message" class="launch-message" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <span>🌲</span>
+                <h3>EXPLORE</h3>
+                <p>Discover the world and everything it has to offer.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>🏰</span>
+                <h3>BUILD</h3>
+                <p>Create something that will stand the test of time.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>⚔</span>
+                <h3>SURVIVE</h3>
+                <p>Make your mark on the Commonwealth.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>THE COMMONWEALTH © 2026</p>
+        <p>Built for the community.</p>
+    </footer>
+
+</body>
+</html>
+
