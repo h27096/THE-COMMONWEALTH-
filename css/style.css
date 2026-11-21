@@ -287,3 +287,137 @@ footer {
 .connection-detail button {
     width: 100%;
 }
+
+
+/* COMMONWEALTH CONSTITUTION */
+
+.constitution-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px 90px;
+}
+
+.constitution-header {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.constitution-header h1 {
+    font-size: clamp(35px, 6vw, 58px);
+    color: var(--gold);
+    margin: 15px 0;
+    letter-spacing: 3px;
+}
+
+.constitution-header p {
+    color: var(--muted);
+}
+
+.constitution-divider {
+    width: 100px;
+    height: 2px;
+    background: var(--gold);
+    margin: 30px auto;
+}
+
+.document-label {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.document-card {
+    background: var(--surface);
+    border: 1px solid #4a513f;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.preamble {
+    text-align: center;
+}
+
+.preamble h2 {
+    color: var(--gold);
+    margin: 15px 0 25px;
+    letter-spacing: 2px;
+}
+
+.preamble p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #e0dfd4;
+}
+
+.constitution-article {
+    background: var(--surface);
+    border: 1px solid #303a31;
+    border-left: 3px solid var(--gold);
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 22px;
+}
+
+.article-number {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.constitution-article h2 {
+    margin: 10px 0 20px;
+    font-size: 25px;
+}
+
+.constitution-article ol {
+    padding-left: 25px;
+}
+
+.constitution-article li {
+    color: var(--muted);
+    padding: 8px 5px;
+    line-height: 1.7;
+}
+
+.constitution-article li::marker {
+    color: var(--gold);
+}
+
+.constitution-footer {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.constitution-footer h2 {
+    color: var(--gold);
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.constitution-footer p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 12px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .constitution-page {
+        padding: 35px 15px 60px;
+    }
+
+    .document-card {
+        padding: 25px;
+    }
+
+    .constitution-article {
+        padding: 22px;
+    }
+
+    .preamble p {
+        font-size: 16px;
+    }
+}
