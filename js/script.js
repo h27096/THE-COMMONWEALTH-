@@ -22,3 +22,15 @@ launchForm.addEventListener("submit", function (event) {
     console.log("Server request prepared for:", username);
 });
 
+
+async function copyText(text) {
+    const message = document.getElementById("copy-message");
+
+    try {
+        await navigator.clipboard.writeText(text);
+        message.textContent = "Copied successfully!";
+    } catch (error) {
+        message.textContent =
+            "Copy unavailable. Please copy the address manually.";
+    }
+}
