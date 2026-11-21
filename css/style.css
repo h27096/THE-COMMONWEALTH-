@@ -260,3 +260,30 @@ footer {
     }
 }
 
+
+.connection-detail {
+    background: var(--surface-light);
+    padding: 20px;
+    margin-top: 18px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.connection-detail span {
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.connection-detail code {
+    color: white;
+    overflow-wrap: anywhere;
+    font-size: 15px;
+}
+
+.connection-detail button {
+    width: 100%;
+}
